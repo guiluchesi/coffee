@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 13, ../sass/screen.scss */
+body {
+  padding: 0;
+  background-color: #532700;
+}
+
+/* line 18, ../sass/screen.scss */
+h2 {
+  color: #fff;
+}
+
+/* line 22, ../sass/screen.scss */
+.numXic {
+  text-align: center;
+  position: relative;
+  bottom: 160px;
+  right: 25px;
+  font-size: 80px;
+  color: #3A1C00;
+}
+
+/* line 31, ../sass/screen.scss */
+.coffeXic {
+  height: 225px;
+  margin: 50px 0 40px;
+}
+
+/* line 37, ../sass/screen.scss */
+.addCoffee a {
+  background: #8D4421;
+  border: none;
+  color: #fff;
+  text-shadow: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 44, ../sass/screen.scss */
+.addCoffee a:hover {
+  background: #643001;
+  color: #fff;
+}
+
+/* line 51, ../sass/screen.scss */
+.vcenter {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}

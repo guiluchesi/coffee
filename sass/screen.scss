@@ -1,0 +1,56 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/css3/transition";
+
+$brow1: #BD7938;
+$brow2: #8D4421;
+$brow3: #643001;
+$brow4: #532700; 
+$brow5: #3A1C00;
+
+body{
+	padding: 0;
+	background-color: $brow4;
+}
+
+h2{
+	color: #fff;
+}
+
+.numXic{
+	text-align: center;
+    position: relative;
+    bottom: 160px;
+    right: 25px;
+    font-size: 80px;
+    color: $brow5;
+}
+
+.coffeXic{
+	height: 225px;
+    margin: 50px 0 40px;
+}
+
+.addCoffee{
+	a{
+		background: $brow2;
+	    border: none;
+	    color: #fff;
+	    text-shadow: none;
+	    @include transition-property();
+  		@include transition-duration(0.4s);
+	    &:hover{
+	    	background: $brow3;
+	    	color: #fff;
+	    }
+	}
+}
+
+.vcenter {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
