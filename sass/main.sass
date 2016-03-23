@@ -1,0 +1,107 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />*/
+@import compass/css3/transition
+@import compass/css3/box-shadow
+
+$brow1: #BD7938
+$brow2: #8D4421
+$brow3: #643001
+$brow4: #532700
+$brow5: #3A1C00
+
+body
+  padding: 0
+  background-color: $brow4
+  padding: 50px 0 20px 0
+
+h2
+  color: $brow1
+  text-align: center
+
+.numXic
+  text-align: center
+  font-size: 80px
+  color: #BD7938
+  background: #3A1C00
+  border-radius: 50%
+  width: 250px
+  height: 250px
+  padding: 60px 0
+  margin-bottom: 45px
+  border: 5px solid #F9F9F9
+  position: relative
+
+  +box-shadow(0 0 15px rgba(0, 0, 0, 0.4))
+
+  &:before
+    width: 90px
+    height: 23px
+    content: ''
+    background: #F9F9F9
+    display: block
+    position: absolute
+    border-radius: 0 10px 10px 0
+    left: 243px
+    bottom: 107px
+
+    +box-shadow(8px 0 15px rgba(0, 0, 0, 0.4))
+
+  @media (max-width: 450px)
+    right: 7%
+
+.coffeXic
+  margin: 90px 0 90px
+
+  &:after
+    width: 310px
+    height: 310px
+    content: ''
+    background-color: #E0DEDE
+    display: block
+    position: absolute
+    right: 137px
+    bottom: 100px
+    border-radius: 50%
+    z-index: -4
+
+    +box-shadow(0 0 25px rgba(0, 0, 0, 0.8))
+
+    @media (max-width: 450px)
+      right: 18%
+
+    @media (min-width: 520px) and (max-width: 991px)
+      right: 23%
+
+    @media (min-width: 992px) and (max-width: 1199px)
+      right: 18%
+
+.addCoffee
+  text-align: center
+
+  a
+    background: $brow1
+    border: none
+    color: $brow5
+    padding: 10px 20px
+    text-shadow: none
+    @include transition-property()
+    @include transition-duration(0.4s)
+    +box-shadow(0px 5px 0px $brow2, 0px 5px 7px rgba(0, 0, 0, 0.7))
+
+    &:hover, &:active
+      background: $brow1
+      color: $brow5
+
+    &:active
+      +box-shadow(0px 0px 7px rgba(0, 0, 0, 0.3))
+
+      position: relative
+      top: 5px
+
+.vcenter
+  min-height: 100%
+  min-height: 100vh
+  display: flex
+  align-items: center
